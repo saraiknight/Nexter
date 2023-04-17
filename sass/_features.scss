@@ -5,7 +5,10 @@
 
   display: grid;
   // grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); //to make it responsive without media query
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(25rem, 1fr)
+  ); //to make it responsive without media query
   grid-template-rows: auto auto;
   grid-gap: 6rem;
   align-items: start;
@@ -21,7 +24,7 @@
     height: 4.5rem;
     width: 4.5rem;
     grid-row: 1 / span 2; //(span 2) because -1 not the end of the grid but the end of explicit grid.
-    transform: translateY(-1 rem);
+    transform: translateY(-1rem);
   }
   &__text {
     font-size: 1.7rem;
